@@ -1,0 +1,192 @@
+.gallery-title{
+    width: 40%;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+    font-weight: 200;
+    margin-top: 7%;
+    padding-bottom: 1%;
+}
+
+.gallery{
+    height: 500px;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    .gallery-inside{
+        height: 500px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    .one::before{
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background: rgba(255, 209, 64, 0.9);
+        opacity: 0.6;
+        position: absolute;
+    }
+        .one{
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        position: relative;
+        img{
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+   }
+   .two::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(238, 67,103, 0.9);
+    opacity: 0.6;
+    position: absolute;
+}
+   .two{
+    width: 20%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    } 
+   }
+   .three::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(8, 173, 105, 0.9);
+    opacity: 0.6;
+    position: absolute;
+}
+   .three{
+    width: 29%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3%;
+    position: relative;
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    } 
+   } 
+   .four::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(84, 13, 110, 0.9);
+    opacity: 0.6;
+    position: absolute;
+}
+   .four{
+    width: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 3%;
+    position: relative;
+    height: auto;
+    img{
+        height: 306px;
+        width: 100%;
+        object-fit: cover;
+    } 
+   }
+   .five::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(59, 206, 171, 1.0);
+    opacity: 0.6;
+    position: absolute;
+}
+   .five{
+    width: 37%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    img{
+        height: 306px;
+        width: 100%;
+        object-fit: cover;
+    } 
+   }
+
+
+ }
+}
+
+img{
+    height: 50px;
+    width: auto;
+}
+
+@media screen and (max-width: 800px){
+    .gallery{
+        height: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    .gallery-inside{
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        .one,.two,.three,.four,.five{
+            display: flex !important;
+            flex-direction: column !important;
+            width: 100% !important;
+            height: auto !important;
+          
+            img{
+                width: 100% !important;
+                height: 200px !important;
+            }
+        }
+}
+    }
+    .four{
+        margin-bottom: 3% !important; 
+    }
+}

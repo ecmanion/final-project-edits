@@ -1,0 +1,32 @@
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    z-index: 998;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 2%;
+
+    .logo{
+        height: 42px;
+        width: 92px;
+        margin-left: 2%;
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        color: #EE4367;
+        margin-right: 5%;
+        a{
+            width: 100%;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            padding-left: 5%;
+            font-weight: 100;
+        }
+    }
+}

@@ -1,0 +1,204 @@
+.home-hero{
+    width: 100%;
+    height: 500px;
+    z-index: 0;  
+    left:0;
+
+
+
+}
+.hero-img::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 209, 64, 0.7);
+    position: absolute;
+}
+    .hero-img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 2;  
+        left:0;
+        margin-top: -13%;
+
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        z-index: 999;
+    }
+}
+    .hero-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 999;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+    h1{
+        font-weight: 200;
+        justify-content: center;
+        display: flex;
+        color: white;
+    }
+    h2{
+        font-style: italic;
+        font-weight: 100;
+        color:#EE4367;
+    }
+    p{
+        font-style: italic;
+        width: 50%;
+        color:white
+    }
+    .read-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        width: 15%;
+        background-color: #EE4367;
+        a{
+            text-decoration: none;
+            color: white; 
+        }
+    }   
+}
+
+.home-quote{
+    max-height: 300px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+    margin-top: -10%;
+    .home-quote-box{
+        max-height: 300px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        p{
+            color: #FFD140;
+            margin-top: 7%;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 145%;
+        }
+        h5{
+            margin-bottom: 1%;
+            font-weight: 200;
+            color: #EE4367;
+        }
+        h6{
+            color: #A8A8A8;
+            font-weight: 100;
+            margin-top: 0;
+        }
+    }
+}
+
+.upcoming-events{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #540D6E;
+    .upcoming-events-smaller{
+        width: 95%;
+            .upcoming-title{
+                border-bottom: 3px solid white;
+                width: 30%;
+                h2{
+                    color: white;
+                    font-weight: 200;
+                }
+            }
+            .events{
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 3%;
+                .event-single{
+                    height: 125px;
+                    width: 300px;
+                    margin-top: 0;
+                    flex-direction: row;
+                    display: flex;
+                .date{
+                    height: 60px;
+                    width: 60px;
+                    background-color: #EE4367;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    h3{
+                        color: white;
+                        margin-bottom: 0;
+                    }
+                    h4{
+                        color: white;
+                        font-weight: 100;
+                        margin-top: 0;
+                        font-size: 10px;
+                    }
+                }
+                .event-text{
+                    height: 100%;
+                    width: 140px;
+                    margin-top: 0;
+                    flex-direction: column;
+                    display: flex;
+                    margin-left: 4%;
+                    .lorem-white{
+                        height: 35px;
+                        width: 100%;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: 200;
+                        p{  
+                            margin-top: 0;
+                        }
+                    }
+                    .lorem-pink{
+                        height: 78px;
+                        width: 100%;
+                        color: #EE4367;
+                        font-size: 10px;
+                        font-weight: 200;
+                        p{  
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1070px){
+    .upcoming-events{
+        height: auto;
+   
+    .events{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+}
+
+

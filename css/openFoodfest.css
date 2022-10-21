@@ -1,0 +1,100 @@
+@media only screen and (max-width: 930px) {
+  .big-number, .big-title {
+    font-size: 80px !important;
+  }
+}
+.entire-page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.entire-page .gallery-link-image::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: rgb(84, 13, 110);
+  opacity: 0.6;
+  position: absolute;
+}
+.entire-page .gallery-link-image {
+  max-height: auto;
+  width: 90%;
+  margin-top: 3%;
+  position: relative;
+}
+.entire-page .gallery-link-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+.entire-page .gallery-link-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  height: 200px;
+  padding: 0;
+  margin-bottom: 0;
+  text-shadow: 2px 3px 4px black;
+}
+.entire-page .gallery-link-header .big-number {
+  color: #540D6E;
+  font-size: 130px;
+  font-weight: 400;
+}
+.entire-page .gallery-link-header .big-title {
+  color: #540D6E;
+  font-size: 130px;
+  font-weight: 400;
+}
+.entire-page .paragraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 140px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.entire-page .paragraphs p {
+  width: 45%;
+  height: 100%;
+  font-style: italic;
+}

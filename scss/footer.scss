@@ -1,0 +1,63 @@
+footer{
+    color: white;
+    height: 455px;
+    width: 100%;
+    background-color: #EE4367;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        height: 42px;
+        width: 92px;
+    }
+    .footer-contact{
+       line-height: 1%;
+       margin-top: 4%;
+        h5{
+            display: flex;
+            justify-content: center;
+            font-weight:200;
+        }
+    }
+    .footer-email{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .enter-email{
+            width: 40%;
+            height: 50%;
+            background-color: #F56B88;
+            padding-left: 15px;
+        }
+        .subscribe-button{
+            height: 54%;
+            width: 22%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: #EE4367;
+                text-decoration: none;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+    .socials{
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .copyright{
+        font-weight: 200;
+        opacity: 65%;
+        margin-top: 5%;
+    }
+}
